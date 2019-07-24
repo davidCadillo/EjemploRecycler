@@ -143,7 +143,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
             android:layout_marginTop="4dp"
-
             app:layout_constraintStart_toEndOf="@+id/tvCasa2"
             app:layout_constraintTop_toBottomOf="@+id/tvCasa4"
             tools:text="@tools:sample/cities" />
