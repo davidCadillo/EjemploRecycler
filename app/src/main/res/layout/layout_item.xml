@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -17,7 +16,7 @@
         <ImageView
             android:id="@+id/ivMago"
             android:layout_width="75dp"
-            android:layout_height="100dp"
+            android:layout_height="130dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:src="@mipmap/ic_launcher_round"
@@ -53,6 +52,17 @@
 
         <TextView
             android:id="@+id/tvCasa2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:text="Nacimiento: "
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/ivMago"
+            app:layout_constraintTop_toBottomOf="@+id/tvCasa4" />
+
+        <TextView
+            android:id="@+id/tvCasa4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
@@ -100,8 +110,9 @@
             android:id="@+id/tvEspecie"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
             android:layout_marginTop="4dp"
-            app:layout_constraintStart_toEndOf="@+id/tvCasa2"
+            app:layout_constraintStart_toEndOf="@+id/tvCasa4"
             app:layout_constraintTop_toBottomOf="@+id/tvActor"
             tools:text="@tools:sample/cities" />
 
@@ -124,6 +135,17 @@
             android:layout_marginTop="4dp"
             app:layout_constraintStart_toEndOf="@+id/tvActor"
             app:layout_constraintTop_toBottomOf="@+id/tvCasa"
+            tools:text="@tools:sample/cities" />
+
+        <TextView
+            android:id="@+id/tvNacimiento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+
+            app:layout_constraintStart_toEndOf="@+id/tvCasa2"
+            app:layout_constraintTop_toBottomOf="@+id/tvCasa4"
             tools:text="@tools:sample/cities" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -20,7 +20,7 @@ public class MagoListAdapter extends RecyclerView.Adapter<MagoListAdapter.MagoVi
     private List<? extends Mago> magos;
     private Context context;
 
-    public MagoListAdapter(Context context, List<? extends Mago> magos){
+     MagoListAdapter(Context context, List<? extends Mago> magos){
         this.context = context;
         this.magos =   magos;
     }
@@ -41,6 +41,7 @@ public class MagoListAdapter extends RecyclerView.Adapter<MagoListAdapter.MagoVi
         holder.tvSexo.setText(magos.get(position).getGender());
         holder.tvEspecie.setText(magos.get(position).getSpecies());
         holder.tvNombreActor.setText(magos.get(position).getActor());
+        holder.tvNacimiento.setText(magos.get(position).getDateOfBirth());
         Glide.with(context).load(foto).into(holder.ivMago);
         //holder.ivMago.setImageResource(context.getResources().getIdentifier(foto, "drawable", context.getPackageName()));
 
@@ -54,7 +55,7 @@ public class MagoListAdapter extends RecyclerView.Adapter<MagoListAdapter.MagoVi
 
 
     @Override
-    public void onAttachedToRecyclerView(RecyclerView recyclerView) {
+    public void onAttachedToRecyclerView(@NonNull RecyclerView recyclerView) {
         super.onAttachedToRecyclerView(recyclerView);
     }
 
@@ -65,6 +66,7 @@ public class MagoListAdapter extends RecyclerView.Adapter<MagoListAdapter.MagoVi
         private TextView tvNombreCasa;
         private TextView tvSexo;
         private TextView tvNombreActor;
+        private TextView tvNacimiento;
         private TextView tvEspecie;
         private ImageView ivMago;
 
@@ -76,6 +78,7 @@ public class MagoListAdapter extends RecyclerView.Adapter<MagoListAdapter.MagoVi
             tvSexo = view.findViewById(R.id.tvSexo);
             tvEspecie = view.findViewById(R.id.tvEspecie);
             tvNombreActor = view.findViewById(R.id.tvNombreActor);
+            tvNacimiento = view.findViewById(R.id.tvNacimiento);
         }
 
     }
