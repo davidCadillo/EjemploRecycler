@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="8dp"
+        tools:ignore="contentDescription">
+
+        <ImageView
+            android:id="@+id/ivMago"
+            android:layout_width="75dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:src="@mipmap/ic_launcher_round"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/ivMago"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@tools:sample/last_names" />
+
+        <TextView
+            android:id="@+id/tvCasa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Casa: "
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/tvNombreCasa"
+            app:layout_constraintStart_toEndOf="@+id/ivMago"
+            app:layout_constraintTop_toBottomOf="@+id/tvNombre"
+            tools:text="Casa: " />
+
+        <TextView
+            android:id="@+id/tvCasa2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:text="Especie: "
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/ivMago"
+            app:layout_constraintTop_toBottomOf="@+id/tvActor"
+            tools:text="Especie: " />
+
+        <TextView
+            android:id="@+id/tvNombreCasa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tvCasa"
+            app:layout_constraintTop_toBottomOf="@+id/tvNombre"
+            tools:text="@tools:sample/cities"
+
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Sexo: "
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/tvNombreCasa"
+            app:layout_constraintTop_toBottomOf="@+id/tvNombre" />
+
+        <TextView
+            android:id="@+id/tvSexo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/tvNombre"
+            tools:text="@tools:sample/cities" />
+
+        <TextView
+            android:id="@+id/tvEspecie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toEndOf="@+id/tvCasa2"
+            app:layout_constraintTop_toBottomOf="@+id/tvActor"
+            tools:text="@tools:sample/cities" />
+
+        <TextView
+            android:id="@+id/tvActor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:text="Actor: "
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/ivMago"
+            app:layout_constraintTop_toBottomOf="@+id/tvCasa" />
+
+        <TextView
+            android:id="@+id/tvNombreActor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toEndOf="@+id/tvActor"
+            app:layout_constraintTop_toBottomOf="@+id/tvCasa"
+            tools:text="@tools:sample/cities" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
